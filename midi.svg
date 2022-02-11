@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-	 viewBox="0 0 1080 1080" style="enable-background:new 0 0 1080 1080;" xml:space="preserve">
+	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#000000;}
 	.st1{fill:#FFFFFF;}
 </style>
-<rect class="st0" width="1080" height="1080"/>
+<rect class="st0" width="200" height="200"/>
 <g>
 	<path class="st1" d="M480.15,484.35v195.49H423.5V536.61h-63.83v143.23h-56.65V536.61h-63.83v143.23h-56.65V484.35H480.15z M543.32,395.78c18.75,0,33.11,14.36,33.11,33.11c0,17.95-15.16,32.71-33.11,32.71
 		c-17.95,0-32.72-14.76-32.72-32.71C510.61,410.14,525.37,395.78,543.32,395.78z M515,679.84V484.35h57.05v195.49H515z
