@@ -14,7 +14,7 @@
     left: calc(50% - 100px);
     width: 200px;
     height: 200px;
-    background-image: url("/img/midi.svg");
+    background-image: url("midi.svg");
 }
 .dice_wall:nth-child(1) {
     transform: translateZ(100px);
