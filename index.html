@@ -32,8 +32,9 @@
 
     const loader = new THREE.TextureLoader();
     const filename = 'img/midi-logo-1024.png';
+    const video = 'img/midi-animacion.webm';
     const materialArray = [
-        new THREE.MeshBasicMaterial( { map: loader.load(filename) } ),
+        new THREE.MeshBasicMaterial( { map: loader.load(video) } ),
         new THREE.MeshBasicMaterial( { map: loader.load(filename) } ),
         new THREE.MeshBasicMaterial( { color: 0x000000 } ),
         new THREE.MeshBasicMaterial( { color: 0x000000 } ),
