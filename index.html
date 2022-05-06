@@ -26,9 +26,9 @@
 </head>
 
 <body>
-<div class="noise-bg"></div>
 <script type="module">
     import * as THREE from 'https://cdn.skypack.dev/three@0.135.0'
+    import { OrbitControls } from 'https://cdn.skypack.dev/three@0.135.0/examples/jsm/controls/OrbitControls.js'
 
     const loader = new THREE.TextureLoader();
     const filename = 'img/midi-logo-1024.png';
@@ -47,6 +47,7 @@
     const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.body.appendChild( renderer.domElement );
+    const controls = new OrbitControls( camera, renderer.domElement );
 
     const cubeSize = 2;
     const geometry = new THREE.BoxGeometry(cubeSize, cubeSize, cubeSize);
@@ -67,5 +68,6 @@
 
     animate();
 </script>
+<div id="noise-bg"></div>
 </body>
 </html>
