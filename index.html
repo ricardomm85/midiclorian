@@ -8,13 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>MIDI</title>
-    <meta name="description" content="MIDI">
+    <meta name="description" content="Discover audiovisual performances, sound installations, and generative art by MIDI. Explore the frontiers of new media art, human interaction, and environmental awareness.">
     <meta name="author" content="SitePoint">
 
     <meta property="og:title" content="MIDI">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.midi.video">
-    <meta property="og:description" content="MIDI">
+    <meta property="og:description" content="Discover audiovisual performances, sound installations, and generative art by MIDI. Explore the frontiers of new media art, human interaction, and environmental awareness.">
     <meta property="og:image" content="image.png">
 
     <link rel="icon" href="/favicon.ico">
@@ -22,6 +22,10 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -44,10 +48,13 @@
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+    const cubeDiv = document.getElementById('cube');
     const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
-    renderer.setSize( window.innerWidth, window.innerHeight );
-    document.body.appendChild( renderer.domElement );
+    renderer.setSize( cubeDiv.clientWidth, cubeDiv.clientHeight );
+    cubeDiv.appendChild( renderer.domElement );
     const controls = new OrbitControls( camera, renderer.domElement );
+    controls.minDistance = 5;
+    controls.maxDistance = 8;
 
     const cubeSize = 2;
     const geometry = new THREE.BoxGeometry(cubeSize, cubeSize, cubeSize);
@@ -69,5 +76,24 @@
     animate();
 </script>
 <div id="noise-bg"></div>
+
+<div id="main">
+
+    <div id="cube"></div>
+
+    <div id="description">
+        MIDI is the new media artist collective
+        exploring facets of interaction between
+        new technologies and human perception in
+        the environmental context.
+
+        Our artistic practices include audiovisual
+        performances, sound&light installations,
+        generative art, multimedia avant-garde
+        experiments, and other forms of emotional
+        state transformations.
+    </div>
+</div>
+
 </body>
 </html>
